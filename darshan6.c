@@ -1,5 +1,12 @@
 #include<stdio.h>
-int main(){
-    printf("Hello, World!\n");
-return 0;
+void main()
+{
+  int i,j;
+  for(i=1;i<=5;i++)
+{
+  for(j=1;j<=j;j++)
+{
+printf("#");
+}
+printf("\n");
 }
