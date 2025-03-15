@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeoutbtn").click(function(){
+                $("#box").fadeOut(2000)
+            });
+
+            $("#fadeinbtn").click(function(){
+                $("#box").fadeIn(1000)
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box" style="width: 100px; height: 100px;background-color:rgb(7, 248, 208);"></div>
+    <button id="fadeinbtn">fadin</button>
+    <button id="fadeoutbtn">fadout</button>
+
+</body>
+</html>

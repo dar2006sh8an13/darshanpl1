@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st jqery file</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#colorBtn").click(function(){
+                $("#box").css("background-color","green");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#hidebtn").click(function(){
+                $("#mytext").hide();
+            });
+            $("#showbtn").click(function(){
+                $("#mytext").slideToggle();
+            });
+            $("#toggle").click(function(){
+                $("#Toggledtext").slideToggle();
+            });
+
+            $("#fadinbtn").click(function(){
+                $("#box").slideToggle();
+            });
+            $("#fadoutbtn").click(function(){
+                $("#box").slideToggle();
+            });
+        });
+    </script>
+    <script>
+
+    </script>
+<body>
+    <div id="fadeinbtn" style="width: 100px; height: 100px;background-color:rgb(248, 7, 192);"></div>
+    <button id="fadein">fadin</button>
+    <button id="fadeoutbtn">fadout</button>
+    <hr><br>
+
+    <p id="mytext">This paragraph can be show or hide</p>
+    <button id="hidebtn">Hide</button>
+    <button id="showbtn">Show</button>
+
+
+    <p id="fadeinbtn">This paragraph can be show or hide</p>
+    <button id="fadein">fadin</button>
+    
+
+    <hr><br>
+
+    <p id="Toggledtext">This paragraph can be Toggled</p>
+    <button id="toggle">Toggle</button>
+    <hr><br>
+
+    
+    
+</body>
+</html>
